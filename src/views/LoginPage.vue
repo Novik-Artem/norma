@@ -16,7 +16,6 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: $background;
   .form {
     max-width: 320px;
 

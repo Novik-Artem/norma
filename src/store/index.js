@@ -1,9 +1,10 @@
 import { createStore } from "vuex";
+import timer from "./modules/timer";
+import modals from "./modules/modals";
 
 export default createStore({
-  state: {},
-  getters: {},
-  mutations: {},
-  actions: {},
-  modules: {},
+  modules: {
+    timer,
+    modals
+  },
 });

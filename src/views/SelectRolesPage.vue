@@ -10,7 +10,9 @@
         placeholder="Выбор работника"
         :hints="[{ title: 'Работник 1' }, { title: 'Работник 2' }]"
       />
-      <div :class="$style.button">Начать обследование</div>
+      <router-link to="ticker">
+        <div :class="$style.button">Начать обследование</div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -31,7 +33,6 @@ export default {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: $background;
   .form {
     max-width: 320px;
 

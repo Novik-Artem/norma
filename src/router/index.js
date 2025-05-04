@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import LoginPage from "@/views/LoginPage.vue";
 import SelectRolesPage from "@/views/SelectRolesPage.vue";
+import Ticker from "@/views/Ticker.vue";
 
 const routes = [
   {
@@ -21,6 +22,11 @@ const routes = [
     component: SelectRolesPage,
     name: "roles",
     meta: { title: " | Выберите должность" },
+  },
+  {
+    path: "/ticker",
+    component: Ticker,
+    name: "ticker",
   },
 ];
 

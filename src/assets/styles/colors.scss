@@ -1,4 +1,23 @@
 $t-white: #fff;
+$bg-white: #fff;
 $background: #f0f1f2;
 $t-secondary: #787878;
 $black: #1d1d1d;
+$blue: #386ed2;
+
+@mixin scrollbarY {
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $black;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar-track {
+    background: $bg-white;
+    cursor: pointer;
+    border-radius: 1rem;
+  }
+}
